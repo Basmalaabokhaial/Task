@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(170, 148, 119);
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="text">Basmala Mohamed 
+        <br>20 Years
+        <br>Damietta City
+    </p><br>
+    <button onclick="max()">Max</button>
+    <button onclick="min()">Min</button>
+    <button onclick="color()">Color</button>
+    <button onclick="opacity()">Transparency</button>
+    <button onclick="visibility()">Hidden</button>
+    <button onclick="initial()">Original</button><br><br><hr><br><br>
+
+
+    <center><div id="img"><img src="1.avif"></div>
+
+        <button onclick="border()">Border</button>
+        <button onclick="borderradius()">Radius</button>
+        <button onclick="visibility1()">Hidden</button>
+        <button onclick="visibility2()">Appear</button>
+        <button onclick="opacity1()">Transparenc</button>
+        </center>
+
+    <script>
+        function max(){
+            document.getElementById("text").style.fontSize = "80px";
+
+        }
+        function min(){
+            document.getElementById("text").style.fontSize = "20px";
+
+        }
+        function color(){
+            document.getElementById("text").style.color = "red";
+
+        }
+        function opacity(){
+            document.getElementById("text").style.opacity = "0.5";
+
+        }
+        function visibility(){
+            document.getElementById("text").style.visibility = "hidden";
+
+        }
+        function initial(){
+            document.getElementById("text").style.all = "initial";
+
+        }
+
+
+
+        function border(){
+            document.getElementById("img").style.border = "5px solid #d7b9aa";
+
+        }
+       function borderradius(){
+            document.getElementById("img").style.borderRadius = "35px";
+
+        }
+        function visibility1(){
+            document.getElementById("img").style.visibility = "hidden";
+
+        }
+        function visibility2(){
+            document.getElementById("img").style.visibility = "visible";
+
+        }function opacity1(){
+            document.getElementById("img").style.opacity = "0.5";
+
+        }
+        
+
+
+
+    </script>
+</body>
+</html>
